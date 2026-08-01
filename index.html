@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trịnh Tuấn Anh — Portfolio | Kinh tế đối ngoại, FTU</title>
+<meta name="description" content="Portfolio cá nhân của Trịnh Tuấn Anh — sinh viên K62 Kinh tế đối ngoại, Trường Đại học Ngoại thương. GPA 3.69/4.0, Trưởng phòng Marketing, Giải Ba HSG Quốc gia môn Toán, Full Marathon 42km.">
+<meta name="author" content="Trịnh Tuấn Anh">
+<meta property="og:title" content="Trịnh Tuấn Anh — Portfolio">
+<meta property="og:description" content="Sinh viên Kinh tế đối ngoại FTU · Trưởng phòng Marketing · Giải Ba HSG Quốc gia môn Toán · Full Marathon 42km">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230C1E1A'/><text y='70' x='50' text-anchor='middle' font-size='58' font-family='monospace' fill='%23C9A227'>TA</text></svg>">
+<style>
+/* ============================================================
+   TRỊNH TUẤN ANH — PORTFOLIO
+   Concept: bàn cờ tỷ phú / sàn giao dịch
+   ============================================================ */
+
+:root{
+  --felt:#0B1D19;          /* nỉ bàn cờ */
+  --felt-2:#112C25;
+  --felt-3:#17392F;
+  --paper:#F3EADA;         /* giấy thẻ đất */
+  --paper-2:#E6D8C0;
+  --paper-3:#D6C4A6;
+  --ink:#12201C;
+  --ink-soft:#4A5A54;
+  --gold:#C9A227;
+  --gold-lt:#E4C55E;
+
+  --p-brown:#7A4E2D;
+  --p-cyan:#5EB8D8;
+  --p-pink:#C7548C;
+  --p-orange:#E08A2E;
+  --p-red:#C4342F;
+  --p-yellow:#E8C33C;
+  --p-green:#2F8B5B;
+  --p-blue:#2B4C8C;
+
+  --font-display:'Archivo Black','Be Vietnam Pro',system-ui,sans-serif;
+  --font-head:'Archivo','Be Vietnam Pro',system-ui,sans-serif;
+  --font-body:'Be Vietnam Pro',system-ui,-apple-system,sans-serif;
+  --font-mono:'IBM Plex Mono','Be Vietnam Pro',monospace;
+
+  --wrap:1180px;
+  --r:4px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+body{
+  font-family:var(--font-body);
+  background:var(--felt);
+  color:var(--paper);
+  font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background:
+    radial-gradient(1100px 620px at 78% -6%, rgba(201,162,39,.10), transparent 62%),
+    radial-gradient(760px 520px at 4% 104%, rgba(46,139,91,.12), transparent 62%);
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--gold);color:var(--ink)}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px;position:relative;z-index:1}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(11,29,25,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,162,39,.24);
+}
+.nav-in{max-width:var(--wrap);margin:0 auto;padding:11px 22px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:14px;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.brand-chip{
+  width:30px;height:30px;border-radius:3px;background:var(--gold);color:var(--ink);
+  display:grid;place-items:center;font-family:var(--font-display);font-size:12px;
+  box-shadow:0 2px 0 #8f7018;
+}
+.nav-links{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{
+  text-decoration:none;font-size:12.5px;font-weight:500;padding:7px 10px;border-radius:3px;
+  color:rgba(243,234,218,.78);transition:.18s;letter-spacing:.01em;
+}
+.nav-links a:hover{color:var(--paper);background:rgba(201,162,39,.14)}
+.nav-toggle{display:none;margin-left:auto;padding:7px 12px;border:1px solid rgba(201,162,39,.4);border-radius:3px;font-size:13px;font-weight:600}
+
+/* ---------- HERO ---------- */
+.hero{padding:56px 0 28px;position:relative}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:52px;align-items:center}
+.eyebrow{
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.eyebrow::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,rgba(201,162,39,.6),transparent)}
+.hero h1{
+  font-family:var(--font-display);
+  font-size:clamp(40px,6.4vw,74px);line-height:.94;letter-spacing:-.02em;margin-bottom:18px;
+}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero-sub{font-size:17px;color:rgba(243,234,218,.8);max-width:52ch;margin-bottom:26px;font-weight:300}
+.hero-sub b{font-weight:600;color:var(--paper)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:3px;
+  font-weight:600;font-size:14px;text-decoration:none;transition:.18s;
+}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 3px 0 #8f7018}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 5px 0 #8f7018}
+.btn-ghost{border:1px solid rgba(243,234,218,.3);color:var(--paper)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(201,162,39,.28);border-radius:3px;overflow:hidden}
+.hstat{padding:14px 16px;border-right:1px solid rgba(201,162,39,.2);background:rgba(255,255,255,.02)}
+.hstat:last-child{border-right:0}
+.hstat b{display:block;font-family:var(--font-mono);font-size:23px;font-weight:600;color:var(--gold-lt);line-height:1.2}
+.hstat span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:rgba(243,234,218,.6)}
+
+/* ---------- BÀN CỜ ---------- */
+.board-shell{position:relative}
+.board{
+  position:relative;aspect-ratio:1/1;width:100%;
+  display:grid;
+  grid-template-columns:1.42fr repeat(5,1fr) 1.42fr;
+  grid-template-rows:1.42fr repeat(5,1fr) 1.42fr;
+  gap:2px;padding:2px;
+  background:#0A1714;
+  border:3px solid var(--gold);
+  border-radius:5px;
+  box-shadow:0 22px 60px rgba(0,0,0,.55), inset 0 0 0 1px rgba(0,0,0,.4);
+}
+.cell{
+  background:var(--paper);color:var(--ink);position:relative;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  padding:3px 2px;text-align:center;cursor:default;transition:.16s;
+  border-radius:1px;
+}
+.cell.link{cursor:pointer}
+.cell.link:hover{background:#fff;transform:scale(1.06);z-index:5;box-shadow:0 0 0 2px var(--gold)}
+.cell .strip{position:absolute;top:0;left:0;right:0;height:22%;border-bottom:1px solid rgba(0,0,0,.45)}
+.cell .lbl{
+  font-family:var(--font-head);font-weight:700;
+  font-size:clamp(5.5px,.78vw,9px);line-height:1.12;letter-spacing:-.01em;
+  text-transform:uppercase;padding-bottom:1px;
+}
+.cell .price{font-family:var(--font-mono);font-size:clamp(5px,.62vw,7.5px);color:#5c6b64}
+.cell.corner{justify-content:center;gap:2px;background:var(--paper-2)}
+.cell.corner .lbl{font-size:clamp(6px,.86vw,10px)}
+.cell.corner .ico{font-size:clamp(12px,2vw,21px);line-height:1}
+.cell.special{background:var(--paper-2)}
+.cell.special .ico{font-size:clamp(11px,1.7vw,18px);line-height:1;margin-bottom:2px}
+.cell.special .lbl{font-size:clamp(5px,.66vw,8px)}
+
+.board-center{
+  grid-column:2/7;grid-row:2/7;background:var(--felt-2);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  border:1px solid rgba(201,162,39,.3);border-radius:3px;padding:14px;position:relative;
+}
+.center-logo{
+  font-family:var(--font-display);font-size:clamp(15px,2.5vw,27px);color:var(--gold);
+  transform:rotate(-8deg);text-align:center;line-height:.95;letter-spacing:-.01em;
+}
+.center-logo small{display:block;font-family:var(--font-mono);font-size:clamp(6px,.85vw,10px);color:rgba(243,234,218,.65);letter-spacing:.2em;margin-top:5px;transform:rotate(0)}
+.dice-row{display:flex;gap:8px;align-items:center}
+.die{
+  width:clamp(26px,4.2vw,38px);aspect-ratio:1;background:var(--paper);border-radius:6px;
+  display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:14%;gap:6%;
+  box-shadow:0 3px 0 rgba(0,0,0,.45);
+}
+.die i{background:var(--ink);border-radius:50%;display:block}
+.die.rolling{animation:shake .42s ease-in-out}
+@keyframes shake{
+  0%,100%{transform:rotate(0) translateY(0)}
+  25%{transform:rotate(-16deg) translateY(-7px)}
+  50%{transform:rotate(12deg) translateY(2px)}
+  75%{transform:rotate(-8deg) translateY(-4px)}
+}
+.roll-btn{
+  background:var(--gold);color:var(--ink);font-weight:700;font-size:clamp(10px,1.25vw,13px);
+  padding:8px 16px;border-radius:3px;box-shadow:0 3px 0 #8f7018;transition:.15s;white-space:nowrap;
+}
+.roll-btn:hover{transform:translateY(-2px);box-shadow:0 5px 0 #8f7018}
+.roll-btn:disabled{opacity:.55;cursor:not-allowed;transform:none;box-shadow:0 3px 0 #8f7018}
+.token{
+  position:absolute;width:clamp(13px,1.9vw,19px);height:clamp(13px,1.9vw,19px);
+  border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff,var(--p-red) 62%);
+  border:1.5px solid #7d1f1c;box-shadow:0 3px 7px rgba(0,0,0,.6);
+  transition:left .2s cubic-bezier(.3,1.5,.5,1),top .2s cubic-bezier(.3,1.5,.5,1);
+  z-index:8;pointer-events:none;
+}
+.board-hint{
+  margin-top:12px;font-family:var(--font-mono);font-size:11px;color:rgba(243,234,218,.55);
+  text-align:center;letter-spacing:.03em;
+}
+
+/* ---------- SECTIONS ---------- */
+section{padding:74px 0;position:relative}
+.sec-head{margin-bottom:38px;max-width:64ch}
+.sec-num{
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:var(--gold);
+  display:flex;align-items:center;gap:10px;margin-bottom:12px;text-transform:uppercase;
+}
+.sec-num::before{content:'';width:26px;height:2px;background:var(--gold)}
+.sec-head h2{font-family:var(--font-display);font-size:clamp(27px,4vw,44px);line-height:1.02;letter-spacing:-.015em}
+.sec-head p{margin-top:13px;color:rgba(243,234,218,.72);font-weight:300;font-size:15.5px}
+
+/* ---------- THẺ ĐẤT (deed card) ---------- */
+.deed{
+  background:var(--paper);color:var(--ink);border-radius:var(--r);overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);border:1px solid rgba(0,0,0,.25);
+  display:flex;flex-direction:column;
+}
+.deed-top{padding:11px 16px;border-bottom:2px solid var(--ink);text-align:center}
+.deed-top .kind{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.72}
+.deed-top .name{font-family:var(--font-display);font-size:17px;line-height:1.12;margin-top:3px}
+.deed-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+.deed-meta{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11px;color:#5c6b64;border-bottom:1px dashed rgba(0,0,0,.2);padding-bottom:8px;flex-wrap:wrap;gap:6px}
+.deed ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.deed li{font-size:13.6px;line-height:1.5;padding-left:17px;position:relative;color:#243029}
+.deed li::before{content:'';position:absolute;left:0;top:8px;width:7px;height:7px;background:var(--ink);transform:rotate(45deg)}
+.deed li b{font-weight:700}
+.deed-rent{margin-top:auto;padding-top:12px;border-top:2px solid var(--ink);display:grid;gap:5px}
+.rent-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;gap:12px}
+.rent-row span{color:#5c6b64}
+.rent-row b{font-family:var(--font-mono);font-weight:600;font-size:14.5px;color:var(--ink);text-align:right}
+
+/* ---------- HỒ SƠ ---------- */
+.profile{display:grid;grid-template-columns:300px minmax(0,1fr);gap:44px;align-items:start}
+.pf-photo{position:relative}
+.pf-photo img{
+  width:100%;border-radius:50%;border:3px solid var(--gold);background:var(--felt-2);
+  box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+.pf-badge{
+  position:absolute;bottom:6px;right:-4px;background:var(--paper);color:var(--ink);
+  padding:7px 13px;border-radius:3px;font-family:var(--font-mono);font-size:11px;font-weight:600;
+  box-shadow:0 5px 16px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.3);
+}
+.pf-text p{color:rgba(243,234,218,.82);margin-bottom:15px;font-weight:300;font-size:15.6px}
+.pf-text p b{font-weight:600;color:var(--paper)}
+.pf-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:rgba(201,162,39,.22);border:1px solid rgba(201,162,39,.22);margin-top:26px}
+.pf-item{background:var(--felt);padding:14px 16px}
+.pf-item span{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.pf-item b{font-weight:500;font-size:14.5px}
+.pf-item a{text-decoration:none;border-bottom:1px solid rgba(201,162,39,.4)}
+.pf-item a:hover{color:var(--gold)}
+
+/* ---------- GRIDS ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+
+/* ---------- BẢNG ĐIỂM ---------- */
+.gpa-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin-bottom:34px}
+.gpa-card{
+  background:linear-gradient(160deg,var(--felt-2),var(--felt));border:1px solid rgba(201,162,39,.3);
+  border-radius:var(--r);padding:20px;position:relative;overflow:hidden;
+}
+.gpa-card::after{content:'';position:absolute;top:0;right:0;width:52px;height:52px;background:linear-gradient(135deg,transparent 50%,rgba(201,162,39,.16) 50%)}
+.gpa-card b{display:block;font-family:var(--font-mono);font-size:35px;font-weight:600;color:var(--gold-lt);line-height:1.05}
+.gpa-card b small{font-size:16px;opacity:.6}
+.gpa-card span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(243,234,218,.62);margin-top:5px;display:block}
+
+.chart{display:flex;align-items:flex-end;gap:clamp(6px,1.4vw,18px);height:210px;padding:18px 16px 0;background:rgba(255,255,255,.03);border:1px solid rgba(201,162,39,.2);border-radius:var(--r);margin-bottom:30px;overflow-x:auto}
+.bar-col{flex:1;min-width:44px;display:flex;flex-direction:column;align-items:center;gap:7px;height:100%;justify-content:flex-end}
+.bar{
+  width:100%;max-width:56px;background:linear-gradient(180deg,var(--gold-lt),var(--gold));
+  border-radius:2px 2px 0 0;position:relative;transition:height 1s cubic-bezier(.2,.9,.3,1);
+  min-height:3px;
+}
+.bar.top{background:linear-gradient(180deg,#8fe0b4,var(--p-green))}
+.bar em{position:absolute;top:-19px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:11.5px;font-weight:600;color:var(--paper);font-style:normal}
+.bar-col span{font-size:10.5px;color:rgba(243,234,218,.6);text-align:center;font-family:var(--font-mono);white-space:nowrap}
+
+.sem{border:1px solid rgba(201,162,39,.25);border-radius:var(--r);margin-bottom:10px;overflow:hidden;background:rgba(255,255,255,.025)}
+.sem-btn{width:100%;display:flex;align-items:center;gap:14px;padding:15px 18px;text-align:left;transition:.16s;flex-wrap:wrap}
+.sem-btn:hover{background:rgba(201,162,39,.09)}
+.sem-btn .arw{font-family:var(--font-mono);color:var(--gold);transition:.25s;font-size:13px}
+.sem.open .sem-btn .arw{transform:rotate(90deg)}
+.sem-btn .t{font-family:var(--font-head);font-weight:700;font-size:15px;flex:1;min-width:150px}
+.pill{font-family:var(--font-mono);font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid rgba(201,162,39,.4);color:var(--gold-lt);white-space:nowrap}
+.pill.gpa{background:var(--gold);color:var(--ink);border-color:var(--gold);font-weight:600}
+.pill.soon{border-color:rgba(94,184,216,.5);color:var(--p-cyan)}
+.sem-body{display:none;padding:0 18px 16px}
+.sem.open .sem-body{display:block}
+.tbl{width:100%;border-collapse:collapse;font-size:13.4px}
+.tbl th{
+  text-align:left;font-family:var(--font-mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--gold);padding:9px 8px;border-bottom:1px solid rgba(201,162,39,.3);font-weight:500;
+}
+.tbl td{padding:9px 8px;border-bottom:1px solid rgba(243,234,218,.09);color:rgba(243,234,218,.85)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .num{font-family:var(--font-mono);text-align:right;white-space:nowrap}
+.tbl .code{font-family:var(--font-mono);font-size:12px;color:rgba(243,234,218,.55)}
+.gr{display:inline-block;min-width:23px;text-align:center;padding:1px 6px;border-radius:3px;font-family:var(--font-mono);font-size:12px;font-weight:600}
+.gr.A{background:rgba(47,139,91,.28);color:#8fe0b4}
+.gr.B{background:rgba(94,184,216,.2);color:#9ad8ee}
+.gr.C{background:rgba(224,138,46,.22);color:#f0b775}
+
+/* ---------- HUY CHƯƠNG ---------- */
+.medals{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.medal{
+  background:linear-gradient(165deg,rgba(201,162,39,.14),rgba(255,255,255,.02));
+  border:1px solid rgba(201,162,39,.35);border-radius:var(--r);padding:24px 20px;text-align:center;
+  transition:.2s;
+}
+.medal:hover{transform:translateY(-4px);border-color:var(--gold)}
+.medal .ico{font-size:34px;line-height:1;margin-bottom:12px}
+.medal h4{font-family:var(--font-head);font-size:16px;font-weight:700;margin-bottom:6px;line-height:1.25}
+.medal p{font-size:13px;color:rgba(243,234,218,.65)}
+.medal .yr{font-family:var(--font-mono);font-size:11px;color:var(--gold);margin-top:9px;display:block}
+
+/* ---------- CHẠY BỘ ---------- */
+.run-hero{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;
+  border:1px solid rgba(196,52,47,.45);border-radius:var(--r);overflow:hidden;margin-bottom:26px;
+  background:linear-gradient(140deg,rgba(196,52,47,.16),rgba(0,0,0,.25));
+}
+.run-hero-l{padding:34px}
+.run-tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:#ff7a4d;text-transform:uppercase}
+.run-hero h3{font-family:var(--font-display);font-size:clamp(30px,5vw,54px);line-height:.95;margin:12px 0 6px}
+.run-hero h3 small{font-size:.42em;color:rgba(243,234,218,.6)}
+.run-hero p{color:rgba(243,234,218,.75);font-size:14.5px;font-weight:300;max-width:40ch}
+.run-figs{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap}
+.run-figs div b{display:block;font-family:var(--font-mono);font-size:22px;color:#ff9a6d;font-weight:600}
+.run-figs div span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(243,234,218,.55)}
+.run-hero-r{position:relative;min-height:270px;background:#000}
+.run-hero-r img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.run-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:12px;margin-bottom:26px}
+.run-item{
+  border:1px solid rgba(243,234,218,.16);border-radius:var(--r);padding:16px;
+  background:rgba(255,255,255,.025);transition:.18s;
+}
+.run-item:hover{border-color:#ff7a4d;transform:translateY(-3px)}
+.run-item b{display:block;font-family:var(--font-mono);font-size:21px;color:var(--paper);font-weight:600}
+.run-item .sub{display:flex;gap:12px;margin-top:7px;font-family:var(--font-mono);font-size:11.5px;color:rgba(243,234,218,.6)}
+.run-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.run-photos img{width:100%;height:210px;object-fit:cover;border-radius:var(--r);border:1px solid rgba(243,234,218,.14);cursor:zoom-in;transition:.2s}
+.run-photos img:hover{transform:scale(1.02);border-color:#ff7a4d}
+
+/* ---------- KỸ NĂNG ---------- */
+.skill-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
+.skill-box h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  padding:8px 14px;border:1px solid rgba(243,234,218,.22);border-radius:3px;font-size:13.5px;
+  background:rgba(255,255,255,.03);transition:.16s;
+}
+.chip:hover{border-color:var(--gold);color:var(--gold-lt);transform:translateY(-2px)}
+
+/* ---------- THƯ VIỆN ---------- */
+.gallery{columns:3;column-gap:12px}
+.gallery img{width:100%;margin-bottom:12px;border-radius:var(--r);border:1px solid rgba(243,234,218,.13);cursor:zoom-in;transition:.22s;break-inside:avoid}
+.gallery img:hover{transform:scale(1.015);border-color:var(--gold)}
+
+.lightbox{position:fixed;inset:0;background:rgba(5,12,10,.95);z-index:200;display:none;place-items:center;padding:26px;cursor:zoom-out}
+.lightbox.on{display:grid}
+.lightbox img{max-width:94vw;max-height:90vh;border-radius:var(--r);box-shadow:0 24px 70px rgba(0,0,0,.7)}
+.lb-close{position:absolute;top:18px;right:24px;font-size:30px;color:var(--paper);line-height:1}
+
+/* ---------- MINI GAME ---------- */
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.game{
+  background:var(--felt-2);border:1px solid rgba(201,162,39,.3);border-radius:var(--r);
+  padding:24px;display:flex;flex-direction:column;
+}
+.game h4{font-family:var(--font-display);font-size:19px;margin-bottom:5px}
+.game .hint{font-size:13px;color:rgba(243,234,218,.6);margin-bottom:18px;font-weight:300}
+.game-stage{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;min-height:190px}
+
+.fate-card{
+  background:var(--paper);color:var(--ink);border-radius:var(--r);padding:20px;text-align:center;
+  min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:9px;
+  border:1px solid rgba(0,0,0,.3);box-shadow:0 8px 22px rgba(0,0,0,.35);
+}
+.fate-card .kind{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#7d8a84}
+.fate-card .ico{font-size:26px}
+.fate-card p{font-size:14.5px;line-height:1.5;font-weight:500}
+
+.mkt-price{font-family:var(--font-mono);font-size:33px;font-weight:600;text-align:center;color:var(--gold-lt);line-height:1.1}
+.mkt-price.up{color:#8fe0b4}.mkt-price.down{color:#ff8b7d}
+.spark{width:100%;height:74px;display:block}
+.mkt-row{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:12px;color:rgba(243,234,218,.7)}
+.mkt-btns{display:flex;gap:8px}
+.mkt-btns button{flex:1;padding:11px;border-radius:3px;font-weight:600;font-size:13.5px;transition:.15s}
+.b-buy{background:var(--p-green);color:#fff}
+.b-sell{background:var(--p-red);color:#fff}
+.mkt-btns button:disabled{opacity:.4;cursor:not-allowed}
+.mkt-btns button:not(:disabled):hover{transform:translateY(-2px)}
+
+.quiz-q{font-size:15.5px;font-weight:600;line-height:1.45;min-height:48px}
+.quiz-opts{display:grid;gap:8px}
+.quiz-opts button{
+  text-align:left;padding:11px 14px;border:1px solid rgba(243,234,218,.22);border-radius:3px;
+  font-size:13.8px;transition:.15s;background:rgba(255,255,255,.03);
+}
+.quiz-opts button:hover:not(:disabled){border-color:var(--gold);background:rgba(201,162,39,.12)}
+.quiz-opts button.ok{background:rgba(47,139,91,.3);border-color:var(--p-green)}
+.quiz-opts button.no{background:rgba(196,52,47,.28);border-color:var(--p-red)}
+.quiz-meta{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11.5px;color:rgba(243,234,218,.6)}
+.g-btn{background:var(--gold);color:var(--ink);font-weight:700;padding:11px 18px;border-radius:3px;font-size:13.5px;box-shadow:0 3px 0 #8f7018;transition:.15s;align-self:flex-start}
+.g-btn:hover{transform:translateY(-2px);box-shadow:0 5px 0 #8f7018}
+
+/* ---------- LIÊN HỆ ---------- */
+.contact{
+  background:var(--paper);color:var(--ink);border-radius:var(--r);padding:44px;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;
+  box-shadow:0 16px 44px rgba(0,0,0,.45);position:relative;overflow:hidden;
+}
+.contact::before{content:'';position:absolute;top:0;left:0;right:0;height:9px;background:linear-gradient(90deg,var(--p-brown),var(--p-cyan),var(--p-pink),var(--p-orange),var(--p-red),var(--p-yellow),var(--p-green),var(--p-blue))}
+.contact h3{font-family:var(--font-display);font-size:clamp(26px,3.6vw,40px);line-height:1.02;margin-bottom:12px}
+.contact p{color:#41504a;font-size:15px;max-width:40ch}
+.ct-list{display:grid;gap:2px}
+.ct-item{display:flex;align-items:center;gap:14px;padding:13px 15px;background:rgba(18,32,28,.055);border-radius:3px;text-decoration:none;transition:.16s}
+.ct-item:hover{background:var(--ink);color:var(--paper)}
+.ct-item .i{width:34px;height:34px;border-radius:3px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:15px;flex-shrink:0}
+.ct-item:hover .i{background:var(--gold);color:var(--ink)}
+.ct-item span{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;display:block}
+.ct-item b{font-weight:600;font-size:14.5px;word-break:break-word}
+
+footer{border-top:1px solid rgba(201,162,39,.22);padding:30px 0;text-align:center}
+footer p{font-family:var(--font-mono);font-size:11.5px;color:rgba(243,234,218,.5);letter-spacing:.04em}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:38px}
+  .board-shell{max-width:520px;margin:0 auto;width:100%}
+  .profile{grid-template-columns:1fr;gap:28px}
+  .pf-photo{max-width:230px}
+  .grid-3{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  .run-hero{grid-template-columns:1fr}
+  .run-hero-r{min-height:220px}
+  .contact{grid-template-columns:1fr;padding:30px}
+  .gallery{columns:2}
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;background:var(--felt-2);
+    flex-direction:column;padding:8px;border-bottom:1px solid rgba(201,162,39,.3);gap:0;
+  }
+  .nav-links.on{display:flex}
+  .nav-links a{padding:11px 14px;font-size:14px}
+  .nav-toggle{display:block}
+}
+@media(max-width:560px){
+  section{padding:52px 0}
+  .hero{padding:36px 0 18px}
+  .run-photos{grid-template-columns:1fr}
+  .run-photos img{height:230px}
+  .gallery{columns:1}
+  .hero-stats{grid-template-columns:1fr}
+  .hstat{border-right:0;border-bottom:1px solid rgba(201,162,39,.2)}
+  .cell .lbl{font-size:5.4px}
+  .cell .price{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand"><span class="brand-chip">TA</span> TRỊNH TUẤN ANH</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Mở menu">☰ Menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#ho-so">Hồ sơ</a>
+      <a href="#kinh-nghiem">Kinh nghiệm</a>
+      <a href="#bang-diem">Bảng điểm</a>
+      <a href="#toan-hoc">Toán học</a>
+      <a href="#chay-bo">Đường chạy</a>
+      <a href="#ky-nang">Kỹ năng</a>
+      <a href="#thu-vien">Thư viện</a>
+      <a href="#mini-game">Mini game</a>
+      <a href="#lien-he">Liên hệ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">K62 · Kinh tế đối ngoại · FTU</div>
+      <h1>TRỊNH<br>TUẤN ANH</h1>
+      <p class="hero-sub">
+        Dân chuyên Toán rẽ sang thương trường. Bốn năm qua tôi đi hai đường song song:
+        <b>giảng đường Ngoại thương</b> và <b>phòng Marketing của doanh nghiệp thật</b> —
+        nơi con số không còn là bài tập mà là doanh thu.
+      </p>
+      <div class="hero-cta">
+        <a href="#kinh-nghiem" class="btn btn-gold">Xem kinh nghiệm →</a>
+        <a href="#lien-he" class="btn btn-ghost">Liên hệ</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>3.69</b><span>GPA / 4.0</span></div>
+        <div class="hstat"><b>122</b><span>Tín chỉ tích lũy</span></div>
+        <div class="hstat"><b>42<small>km</small></b><span>Full Marathon</span></div>
+      </div>
+    </div>
+
+    <div class="board-shell">
+      <div class="board" id="board">
+        <div class="board-center">
+          <div class="center-logo">TUẤN ANH<br>&amp; CO.<small>ĐI MỘT VÒNG BÀN CỜ</small></div>
+          <div class="dice-row">
+            <div class="die" id="d1"></div>
+            <div class="die" id="d2"></div>
+          </div>
+          <button class="roll-btn" id="rollBtn">🎲 Tung xúc xắc</button>
+        </div>
+        <div class="token" id="token"></div>
+      </div>
+      <p class="board-hint">Bấm vào ô bất kỳ để đi tới mục tương ứng — hoặc để xúc xắc chọn giúp bạn.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HỒ SƠ ===================== -->
+<section id="ho-so">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Ô 01 · Hồ sơ người chơi</div>
+      <h2>Tôi là ai trên bàn cờ này</h2>
+    </div>
+
+    <div class="profile rv">
+      <div class="pf-photo">
+        <img src="assets/img/avatar.png" alt="Chân dung Trịnh Tuấn Anh">
+        <div class="pf-badge">FTU · K62</div>
+      </div>
+      <div class="pf-text">
+        <p>
+          Tôi là <b>Trịnh Tuấn Anh</b>, cựu học sinh chuyên Toán trường THPT Chuyên Thái Nguyên,
+          hiện là sinh viên chuyên ngành <b>Kinh tế đối ngoại — Trường Đại học Ngoại thương</b>.
+        </p>
+        <p>
+          Nền tảng Toán cho tôi thói quen bóc tách vấn đề đến tận gốc; những năm làm
+          <b>Trưởng phòng Marketing</b> dạy tôi phần còn lại: một con số chỉ có giá trị khi nó
+          đổi được thành doanh thu, thành đội ngũ, thành khách hàng quay lại.
+        </p>
+        <p>
+          Tôi tìm môi trường cho phép mình chạy nhiều dự án khác nhau, va vào nhiều loại bài toán khác nhau,
+          để xác định đâu là thế mạnh dài hạn của bản thân — và làm nó thật sâu.
+        </p>
+
+        <div class="pf-list">
+          <div class="pf-item"><span>Trường</span><b>ĐH Ngoại thương (FTU)</b></div>
+          <div class="pf-item"><span>Chuyên ngành</span><b>Kinh tế đối ngoại</b></div>
+          <div class="pf-item"><span>GPA tích lũy</span><b>3.69 / 4.0 — Xuất sắc</b></div>
+          <div class="pf-item"><span>Ngoại ngữ</span><b>IELTS 6.5 (Reading 8.0)</b></div>
+          <div class="pf-item"><span>Nơi ở</span><b>Đống Đa, Hà Nội</b></div>
+          <div class="pf-item"><span>Email</span><b><a href="mailto:trinhtuananhtnnn@gmail.com">trinhtuananhtnnn@gmail.com</a></b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KINH NGHIỆM ===================== -->
+<section id="kinh-nghiem">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Nhóm hồng · Bất động sản đã sở hữu</div>
+      <h2>Ba tấm thẻ đất</h2>
+      <p>Mỗi vị trí là một tài sản đã trả tiền bằng thời gian. Phần “tiền thuê” bên dưới là kết quả thật đo được.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <article class="deed rv">
+        <div class="deed-top" style="background:var(--p-pink);color:#fff">
+          <div class="kind">Thẻ đất · Giáo dục</div>
+          <div class="name">CMATH</div>
+        </div>
+        <div class="deed-body">
+          <div class="deed-meta"><span>Trợ giảng Toán chuyên</span><span>12/2023 – 05/2024</span></div>
+          <ul>
+            <li>Trợ giảng lớp Toán chuyên tại <b>CLB Toán học muôn màu (CMATH)</b>.</li>
+            <li>Hỗ trợ giảng dạy, chữa bài và theo sát tiến độ của học sinh trong suốt khóa.</li>
+            <li>Rèn kỹ năng diễn đạt một vấn đề khó sao cho người nghe hiểu được — thứ dùng lại mỗi ngày khi làm Marketing.</li>
+          </ul>
+          <div class="deed-rent">
+            <div class="rent-row"><span>Thời lượng gắn bó</span><b>6 tháng</b></div>
+            <div class="rent-row"><span>Nền tảng</span><b>Chuyên Toán</b></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="deed rv">
+        <div class="deed-top" style="background:var(--p-pink);color:#fff">
+          <div class="kind">Thẻ đất · Bán lẻ công nghệ</div>
+          <div class="name">LAPTOP HẢI ĐĂNG</div>
+        </div>
+        <div class="deed-body">
+          <div class="deed-meta"><span>Trưởng phòng Marketing</span><span>12/2024 – 10/2025</span></div>
+          <ul>
+            <li>Quản lý, điều phối phòng Marketing quy mô <b>5–7 nhân sự</b>.</li>
+            <li>Nghiên cứu thị trường và đối thủ, tìm khách hàng tiềm năng, phát triển sản phẩm.</li>
+            <li>Triển khai và giám sát các kênh Marketing online; tối ưu doanh thu từ Facebook Ads.</li>
+            <li>Xây hệ thống tìm kiếm data &amp; CSKH, lộ trình thăng tiến cho phòng Marketing và cơ chế hoa hồng cho phòng Sale.</li>
+          </ul>
+          <div class="deed-rent">
+            <div class="rent-row"><span>Doanh thu khách lẻ sau 3 tháng</span><b>0 → 400tr+</b></div>
+            <div class="rent-row"><span>Doanh thu T3/2025 so với T1/2025</span><b>×14</b></div>
+            <div class="rent-row"><span>Tăng trưởng khi mở rộng FB Ads</span><b>+150%</b></div>
+            <div class="rent-row"><span>Fanpage sau 3 tháng</span><b>0 → 5k follow</b></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="deed rv">
+        <div class="deed-top" style="background:var(--p-pink);color:#fff">
+          <div class="kind">Thẻ đất · Nền tảng tuyển dụng</div>
+          <div class="name">DỰ ÁN SJOB</div>
+        </div>
+        <div class="deed-body">
+          <div class="deed-meta"><span>Trưởng phòng Marketing</span><span>06/2023 – 01/2024</span></div>
+          <ul>
+            <li>Phụ trách phòng Marketing <b>7 nhân sự</b> tại Công ty Cổ phần ENUY Corporation.</li>
+            <li>Đánh giá năng lực và kết quả hoạt động của từng nhân sự Marketing.</li>
+            <li>Tham gia hoạch định chiến lược kinh doanh của công ty.</li>
+            <li>Xây chiến lược thu hút — đào tạo — phát triển nguồn nhân lực đủ sức tự triển khai dự án.</li>
+          </ul>
+          <div class="deed-rent">
+            <div class="rent-row"><span>Hoàn thiện đội ngũ cho doanh nghiệp</span><b>15–30 ngày</b></div>
+            <div class="rent-row"><span>Tỷ lệ chốt hợp đồng</span><b>60%</b></div>
+            <div class="rent-row"><span>Tuyển dụng qua đào tạo</span><b>10 người/tháng</b></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HỌC VẤN & BẢNG ĐIỂM ===================== -->
+<section id="bang-diem">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Nhóm xanh · Sổ tài sản học thuật</div>
+      <h2>Bảng điểm, mở ra xem thoải mái</h2>
+      <p>Toàn bộ học kỳ tại Ngoại thương, đúng như trong hệ thống của trường. Bấm vào từng học kỳ để xem chi tiết môn.</p>
+    </div>
+
+    <div class="gpa-top rv">
+      <div class="gpa-card"><b>3.69<small>/4.0</small></b><span>GPA tích lũy</span></div>
+      <div class="gpa-card"><b>8.65<small>/10</small></b><span>Điểm TB hệ 10</span></div>
+      <div class="gpa-card"><b>122</b><span>Tín chỉ tích lũy</span></div>
+      <div class="gpa-card"><b id="countA">—</b><span>Số môn đạt điểm A</span></div>
+    </div>
+
+    <div class="chart rv" id="chart"></div>
+    <div id="semList" class="rv"></div>
+  </div>
+</section>
+
+<!-- ===================== TOÁN HỌC ===================== -->
+<section id="toan-hoc">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Nhóm cam · Tài sản thừa kế</div>
+      <h2>Vốn liếng từ chuyên Toán</h2>
+      <p>Bảy năm trong môi trường chuyên Toán, mạnh nhất ở Hình học phẳng. Đây là những gì còn lại trên giấy — phần còn lại nằm trong cách tôi nghĩ.</p>
+    </div>
+
+    <div class="medals rv">
+      <div class="medal">
+        <div class="ico">🥉</div>
+        <h4>Giải Ba HSG Quốc gia môn Toán</h4>
+        <p>Kỳ thi chọn học sinh giỏi Quốc gia, lớp 12</p>
+        <span class="yr">2022 – 2023</span>
+      </div>
+      <div class="medal">
+        <div class="ico">🎖️</div>
+        <h4>Giải Khuyến khích HSG Quốc gia môn Toán</h4>
+        <p>Kỳ thi chọn học sinh giỏi Quốc gia, lớp 11</p>
+        <span class="yr">2021 – 2022</span>
+      </div>
+      <div class="medal">
+        <div class="ico">🥇</div>
+        <h4>Giải Nhất HSG cấp Tỉnh môn Toán</h4>
+        <p>Tỉnh Thái Nguyên · Huy chương Bạc Trại hè Hùng Vương lần thứ XVI</p>
+        <span class="yr">THPT Chuyên Thái Nguyên</span>
+      </div>
+      <div class="medal">
+        <div class="ico">📐</div>
+        <h4>Điểm trung bình môn Toán 9,7</h4>
+        <p>Suốt ba năm THPT chuyên Toán</p>
+        <span class="yr">Thế mạnh: Hình học phẳng</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHẠY BỘ ===================== -->
+<section id="chay-bo">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Nhóm đỏ · Ngoài giờ hành chính</div>
+      <h2>Đường chạy</h2>
+      <p>Không có huy chương nào ở đây. Chỉ có quãng đường, nhịp độ và việc không dừng lại giữa chừng.</p>
+    </div>
+
+    <div class="run-hero rv">
+      <div class="run-hero-l">
+        <div class="run-tag">Cự ly dài nhất · Full Marathon</div>
+        <h3>43,79<small> km</small></h3>
+        <p>Hoàn thành trọn vẹn cự ly full marathon trong một lần chạy. Chạy từ chiều tới đêm, về đích bằng chân của mình.</p>
+        <div class="run-figs">
+          <div><b>8:21</b><span>Nhịp độ /km</span></div>
+          <div><b>6h05</b><span>Tổng thời gian</span></div>
+          <div><b>0</b><span>Lần bỏ cuộc</span></div>
+        </div>
+      </div>
+      <div class="run-hero-r"><img src="assets/img/run-1.jpg" alt="Trịnh Tuấn Anh trên đường chạy"></div>
+    </div>
+
+    <div class="run-list rv">
+      <div class="run-item"><b>16,20 km</b><div class="sub"><span>7:32 /km</span><span>2h02</span></div></div>
+      <div class="run-item"><b>15,47 km</b><div class="sub"><span>7:42 /km</span><span>1h59</span></div></div>
+      <div class="run-item"><b>14,87 km</b><div class="sub"><span>6:45 /km</span><span>1h40</span></div></div>
+      <div class="run-item"><b>10,82 km</b><div class="sub"><span>8:08 /km</span><span>1h28</span></div></div>
+      <div class="run-item"><b>10,00 km</b><div class="sub"><span>8:14 /km</span><span>1h22</span></div></div>
+      <div class="run-item" style="border-color:rgba(201,162,39,.5)"><b>111+ km</b><div class="sub"><span>Tổng đã ghi lại</span></div></div>
+    </div>
+
+    <div class="run-photos rv">
+      <img src="assets/img/run-1.jpg" alt="Chạy cùng đồng đội ban ngày" loading="lazy">
+      <img src="assets/img/run-2.jpg" alt="Chạy đêm cùng đồng đội" loading="lazy">
+      <img src="assets/img/run-3.jpg" alt="Về đích trong đêm" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KỸ NĂNG ===================== -->
+<section id="ky-nang">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Nhóm vàng · Công cụ trong túi</div>
+      <h2>Kỹ năng</h2>
+    </div>
+
+    <div class="skill-cols rv">
+      <div class="skill-box">
+        <h4>Chuyên môn Marketing</h4>
+        <div class="chips">
+          <span class="chip">Nghiên cứu thị trường</span>
+          <span class="chip">Digital Marketing</span>
+          <span class="chip">Facebook Ads</span>
+          <span class="chip">Google Ads</span>
+          <span class="chip">Xây tư liệu bán hàng</span>
+          <span class="chip">Chăm sóc khách hàng</span>
+          <span class="chip">Facebook · TikTok · YouTube</span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>Quản lý &amp; con người</h4>
+        <div class="chips">
+          <span class="chip">Lãnh đạo đội ngũ</span>
+          <span class="chip">Đào tạo nhân sự</span>
+          <span class="chip">Đàm phán</span>
+          <span class="chip">Tổ chức &amp; điều phối</span>
+          <span class="chip">Xây lộ trình thăng tiến</span>
+          <span class="chip">Thiết kế cơ chế hoa hồng</span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <h4>Nền tảng &amp; chứng chỉ</h4>
+        <div class="chips">
+          <span class="chip">IELTS 6.5 (Reading 8.0)</span>
+          <span class="chip">Tin học văn phòng</span>
+          <span class="chip">Word · Excel · PowerPoint</span>
+          <span class="chip">Tư duy phân tích định lượng</span>
+          <span class="chip">Kinh tế lượng · Chuỗi thời gian</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THƯ VIỆN ẢNH ===================== -->
+<section id="thu-vien">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Ô góc · Thư viện ảnh</div>
+      <h2>Những khung hình dọc đường</h2>
+      <p>Sân khấu, sân bóng, hội trường và vài buổi tối chạy deadline cùng đồng đội.</p>
+    </div>
+
+    <div class="gallery rv" id="gallery">
+      <img src="assets/img/g-suit-sign.jpg" alt="Trịnh Tuấn Anh tại sự kiện" loading="lazy">
+      <img src="assets/img/g-mic-purple.jpg" alt="Cầm micro phát biểu" loading="lazy">
+      <img src="assets/img/g-team-stage.jpg" alt="Chụp cùng tập thể trên sân khấu" loading="lazy">
+      <img src="assets/img/g-field-tower.jpg" alt="Team building trên sân bóng" loading="lazy">
+      <img src="assets/img/g-portrait-purple.jpg" alt="Chân dung dưới ánh đèn sân khấu" loading="lazy">
+      <img src="assets/img/g-team5.jpg" alt="Team 5 nhận bằng vinh danh" loading="lazy">
+      <img src="assets/img/g-field-circle.jpg" alt="Vòng tròn đồng đội trên sân" loading="lazy">
+      <img src="assets/img/g-leader.jpg" alt="Vinh danh Hạt giống lãnh đạo" loading="lazy">
+      <img src="assets/img/g-confetti.jpg" alt="Đêm sự kiện tổng kết" loading="lazy">
+      <img src="assets/img/g-vinhdanh.jpg" alt="Sân khấu vinh danh" loading="lazy">
+      <img src="assets/img/g-field-tower2.jpg" alt="Thử thách xây tháp" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MINI GAME ===================== -->
+<section id="mini-game">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">Ô góc · Khu trò chơi</div>
+      <h2>Chơi ba ván rồi hãy đi tiếp</h2>
+      <p>Đọc CV mãi cũng chán. Ba trò dưới đây mất chưa tới một phút mỗi trò.</p>
+    </div>
+
+    <div class="games rv">
+
+      <div class="game">
+        <h4>Rút thẻ Cơ hội</h4>
+        <p class="hint">Mỗi lá là một mẩu thật về tôi. Rút tới khi nào chán thì thôi.</p>
+        <div class="game-stage">
+          <div class="fate-card" id="fateCard">
+            <div class="kind">Cơ hội &amp; Khí vận</div>
+            <div class="ico">🎴</div>
+            <p>Úp mặt xuống bàn. Bấm nút để lật.</p>
+          </div>
+        </div>
+        <button class="g-btn" id="fateBtn" style="margin-top:16px">Rút một lá</button>
+      </div>
+
+      <div class="game">
+        <h4>Sàn giao dịch 20 giây</h4>
+        <p class="hint">Vốn 100 triệu ảo. Mua đáy bán đỉnh trong 20 lượt giá. Đừng tham.</p>
+        <div class="game-stage">
+          <div class="mkt-price" id="mktPrice">100.0</div>
+          <svg class="spark" id="spark" viewBox="0 0 300 74" preserveAspectRatio="none"></svg>
+          <div class="mkt-row"><span id="mktPos">Đang giữ: tiền mặt</span><span id="mktVal">100,0 tr</span></div>
+          <div class="mkt-row"><span id="mktTurn">Lượt 0 / 20</span><span id="mktBest"></span></div>
+          <div class="mkt-btns">
+            <button class="b-buy" id="btnBuy">Mua</button>
+            <button class="b-sell" id="btnSell" disabled>Bán</button>
+          </div>
+        </div>
+        <button class="g-btn" id="mktStart" style="margin-top:16px">Bắt đầu phiên</button>
+      </div>
+
+      <div class="game">
+        <h4>Đố vui hồ sơ</h4>
+        <p class="hint">Năm câu. Ai đọc kỹ trang này sẽ ăn trọn.</p>
+        <div class="game-stage">
+          <div class="quiz-meta"><span id="qzIdx">Câu 1 / 5</span><span id="qzScore">Điểm: 0</span></div>
+          <div class="quiz-q" id="qzQ">Bấm bắt đầu để nhận câu hỏi đầu tiên.</div>
+          <div class="quiz-opts" id="qzOpts"></div>
+        </div>
+        <button class="g-btn" id="qzBtn" style="margin-top:16px">Bắt đầu</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIÊN HỆ ===================== -->
+<section id="lien-he">
+  <div class="wrap">
+    <div class="contact rv">
+      <div>
+        <h3>Đi hết một vòng bàn cờ rồi.<br>Giờ tới lượt bạn.</h3>
+        <p>Tôi đang tìm cơ hội trong lĩnh vực Marketing và kinh doanh — nơi được chạy nhiều dự án và được đo bằng kết quả thật. Nhắn cho tôi bất cứ lúc nào.</p>
+      </div>
+      <div class="ct-list">
+        <a class="ct-item" href="mailto:trinhtuananhtnnn@gmail.com">
+          <span class="i">✉</span><span><span>Email</span><b>trinhtuananhtnnn@gmail.com</b></span>
+        </a>
+        <a class="ct-item" href="tel:0911686916">
+          <span class="i">☎</span><span><span>Điện thoại</span><b>0911 686 916</b></span>
+        </a>
+        <a class="ct-item" href="https://www.facebook.com/tuananh21042005/" target="_blank" rel="noopener">
+          <span class="i">f</span><span><span>Facebook</span><b>facebook.com/tuananh21042005</b></span>
+        </a>
+        <div class="ct-item" style="cursor:default">
+          <span class="i">⌂</span><span><span>Địa chỉ</span><b>Đống Đa, Hà Nội</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><p>© 2026 TRỊNH TUẤN ANH · TỰ TAY DỰNG TRÊN MỘT BÀN CỜ TỶ PHÚ</p></div>
+</footer>
+
+<div class="lightbox" id="lightbox"><span class="lb-close">×</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+/* ============================================================
+   1. NAV
+   ============================================================ */
+const navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks');
+navToggle.addEventListener('click',()=>navLinks.classList.toggle('on'));
+navLinks.addEventListener('click',e=>{if(e.target.tagName==='A')navLinks.classList.remove('on')});
+
+/* ============================================================
+   2. BÀN CỜ — 24 ô, đi ngược chiều kim đồng hồ từ ô XUẤT PHÁT
+   ============================================================ */
+const C={brown:'var(--p-brown)',cyan:'var(--p-cyan)',pink:'var(--p-pink)',orange:'var(--p-orange)',
+         red:'var(--p-red)',yellow:'var(--p-yellow)',green:'var(--p-green)',blue:'var(--p-blue)'};
+
+const CELLS=[
+ {type:'corner',ico:'➜',t:'XUẤT PHÁT',href:'#top'},
+ {c:C.brown, t:'Hồ sơ',            href:'#ho-so',      p:'K62 FTU'},
+ {c:C.brown, t:'Học vấn',          href:'#bang-diem',  p:'Ngoại thương'},
+ {type:'special',ico:'❓',t:'Cơ hội'},
+ {c:C.cyan,  t:'Bảng điểm',        href:'#bang-diem',  p:'122 TC'},
+ {c:C.cyan,  t:'Kỹ năng',          href:'#ky-nang',    p:'Marketing'},
+ {type:'corner',ico:'💧',t:'TRẠM TIẾP NƯỚC',href:'#chay-bo'},
+ {c:C.pink,  t:'CMATH',            href:'#kinh-nghiem',p:'Trợ giảng'},
+ {c:C.pink,  t:'Hải Đăng',         href:'#kinh-nghiem',p:'TP. MKT'},
+ {c:C.pink,  t:'SJOB',             href:'#kinh-nghiem',p:'TP. MKT'},
+ {type:'special',ico:'🎴',t:'Khí vận'},
+ {c:C.orange,t:'HSG Quốc gia',     href:'#toan-hoc',   p:'Giải Ba'},
+ {type:'corner',ico:'📷',t:'THƯ VIỆN ẢNH',href:'#thu-vien'},
+ {c:C.orange,t:'HSG Tỉnh',         href:'#toan-hoc',   p:'Giải Nhất'},
+ {c:C.red,   t:'Full Marathon',    href:'#chay-bo',    p:'43,79 km'},
+ {type:'special',ico:'❓',t:'Cơ hội'},
+ {c:C.yellow,t:'IELTS 6.5',        href:'#ky-nang',    p:'Reading 8.0'},
+ {c:C.yellow,t:'GPA 3.69',         href:'#bang-diem',  p:'Xuất sắc'},
+ {type:'corner',ico:'🎲',t:'KHU TRÒ CHƠI',href:'#mini-game'},
+ {c:C.green, t:'Facebook Ads',     href:'#ky-nang',    p:'+150%'},
+ {c:C.green, t:'Lãnh đạo',         href:'#ky-nang',    p:'7 nhân sự'},
+ {type:'special',ico:'🎴',t:'Khí vận'},
+ {c:C.blue,  t:'Liên hệ',          href:'#lien-he',    p:'Hà Nội'},
+ {type:'special',ico:'☕',t:'Phí cà phê'}
+];
+/* toạ độ (hàng, cột) trên lưới 7×7, đi theo chiều vòng quanh bàn cờ */
+const POS=[[7,7],[7,6],[7,5],[7,4],[7,3],[7,2],[7,1],[6,1],[5,1],[4,1],[3,1],[2,1],
+           [1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[2,7],[3,7],[4,7],[5,7],[6,7]];
+
+const board=document.getElementById('board'),token=document.getElementById('token');
+const cellEls=[];
+CELLS.forEach((cell,i)=>{
+  const [r,c]=POS[i];
+  const el=document.createElement('div');
+  el.style.gridArea=r+'/'+c+'/'+(r+1)+'/'+(c+1);
+  el.className='cell'+(cell.type==='corner'?' corner':'')+(cell.type==='special'?' special':'')+(cell.href?' link':'');
+  let html='';
+  if(cell.c) html+='<div class="strip" style="background:'+cell.c+'"></div>';
+  if(cell.ico) html+='<div class="ico">'+cell.ico+'</div>';
+  html+='<div class="lbl">'+cell.t+'</div>';
+  if(cell.p) html+='<div class="price">'+cell.p+'</div>';
+  el.innerHTML=html;
+  el.title=cell.t;
+  if(cell.href){
+    el.addEventListener('click',()=>{
+      document.querySelector(cell.href).scrollIntoView({behavior:'smooth'});
+      moveToken(i,true);
+    });
+  }
+  board.appendChild(el);cellEls.push(el);
+});
+
+let tokenIdx=0;
+function placeToken(i,animate){
+  const el=cellEls[i];
+  if(!animate) token.style.transition='none';
+  token.style.left=(el.offsetLeft+el.offsetWidth/2-token.offsetWidth/2)+'px';
+  token.style.top=(el.offsetTop+el.offsetHeight/2-token.offsetHeight/2)+'px';
+  if(!animate) requestAnimationFrame(()=>token.style.transition='');
+}
+function moveToken(i,animate){tokenIdx=i;placeToken(i,animate!==false)}
+window.addEventListener('load',()=>placeToken(0,false));
+window.addEventListener('resize',()=>placeToken(tokenIdx,false));
+
+/* --- xúc xắc --- */
+const PIPS={1:[4],2:[0,8],3:[0,4,8],4:[0,2,6,8],5:[0,2,4,6,8],6:[0,2,3,5,6,8]};
+function drawDie(el,n){
+  el.innerHTML='';
+  for(let k=0;k<9;k++){const i=document.createElement('i');if(!PIPS[n].includes(k))i.style.visibility='hidden';el.appendChild(i)}
+}
+const d1=document.getElementById('d1'),d2=document.getElementById('d2'),rollBtn=document.getElementById('rollBtn');
+drawDie(d1,3);drawDie(d2,4);
+
+rollBtn.addEventListener('click',()=>{
+  rollBtn.disabled=true;
+  d1.classList.add('rolling');d2.classList.add('rolling');
+  const spin=setInterval(()=>{drawDie(d1,1+Math.floor(Math.random()*6));drawDie(d2,1+Math.floor(Math.random()*6))},70);
+  setTimeout(()=>{
+    clearInterval(spin);
+    d1.classList.remove('rolling');d2.classList.remove('rolling');
+    const a=1+Math.floor(Math.random()*6),b=1+Math.floor(Math.random()*6);
+    drawDie(d1,a);drawDie(d2,b);
+    let steps=a+b,n=0;
+    const walk=setInterval(()=>{
+      tokenIdx=(tokenIdx+1)%CELLS.length;placeToken(tokenIdx,true);n++;
+      if(n>=steps){
+        clearInterval(walk);
+        const cell=CELLS[tokenIdx];
+        setTimeout(()=>{
+          if(cell.href){document.querySelector(cell.href).scrollIntoView({behavior:'smooth'})}
+          else if(cell.t==='Cơ hội'||cell.t==='Khí vận'){document.getElementById('mini-game').scrollIntoView({behavior:'smooth'});drawFate()}
+          rollBtn.disabled=false;
+        },340);
+      }
+    },210);
+  },520);
+});
+
+/* ============================================================
+   3. BẢNG ĐIỂM
+   ============================================================ */
+const DIEM=[{"k":"HK1 · 2023 - 2024","gpa4":3.79,"gpa10":9.12,"tc":14,"xl":"Xuất sắc","m":[["CDSV","Sinh hoạt công dân sinh viên đầu khóa",0,null,null,null],["CDSV1","Sinh hoạt công dân theo chuyên đề",0,null,null,null],["ESP111","Tiếng Anh chuyên ngành 1 (Tiếng Anh thương mại nâng cao)",3,7.9,3,"B"],["KDO441","Kỹ năng phát triển nghề nghiệp",3,9.7,4,"A"],["KTE203","Kinh tế vĩ mô",3,9.3,4,"A"],["TOA105","Toán cao cấp",3,10,4,"A"],["TRI115","Kinh tế chính trị Mác-Lênin",2,8.5,4,"A"]]},{"k":"HK2 · 2023 - 2024","gpa4":3.63,"gpa10":8.75,"tc":24,"xl":"Xuất sắc","m":[["ESP121","Tiếng Anh chuyên ngành 2 (Giao tiếp kinh doanh)",3,8.8,4,"A"],["GDQP","Giáo dục quốc phòng",8,7.7,3,"B"],["KTE201","Kinh tế vi mô",3,8.3,3,"B"],["KTE206","Phương pháp nghiên cứu trong kinh tế và kinh doanh",3,8.1,3,"B"],["PLU111","Pháp luật đại cương",3,9,4,"A"],["TIN206","Tin học",3,9,4,"A"],["TOA201","Lý thuyết xác suất và thống kê toán",3,9.5,4,"A"],["TRI114","Triết học Mác-Lênin",3,7.8,3,"B"]]},{"k":"HK3 · 2023 - 2024","gpa4":null,"gpa10":null,"tc":null,"xl":"Xuất sắc","m":[["MKT301","Marketing căn bản",3,9.5,4,"A"]]},{"k":"HK1 · 2024 - 2025","gpa4":3.7,"gpa10":8.42,"tc":20,"xl":"Xuất sắc","m":[["ESP231","Tiếng Anh chuyên ngành 3 (Kinh tế và Kinh doanh Quốc tế)",3,8.8,4,"A"],["GDTC1","Giáo dục thể chất 1",1,7.4,3,"B"],["KDO307","Kinh doanh quốc tế",3,8.5,4,"A"],["KTE306","Quan hệ kinh tế quốc tế",3,8.7,4,"A"],["KTE309","Kinh tế lượng",3,8.2,3,"B"],["KTE312","Kinh tế kinh doanh",3,8.5,4,"A"],["TCH302","Nguyên lý tài chính",3,7.6,3,"B"],["TRI104","Tư tưởng Hồ Chí Minh",2,8.7,4,"A"]]},{"k":"HK2 · 2024 - 2025","gpa4":3.74,"gpa10":8.59,"tc":23,"xl":"Xuất sắc","m":[["DTU301","Nguyên lý quản lý kinh tế",3,8.8,4,"A"],["ESP342","Tiếng Anh chuyên ngành 4 (Hợp đồng)",3,8.6,4,"A"],["GDTC2","Giáo dục thể chất 2",2,6.3,2,"C"],["KET201","Nguyên lý kế toán",3,7.4,3,"B"],["TMA201","Địa lý kinh tế thế giới",3,9,4,"A"],["TMA301","Chính sách thương mại quốc tế",3,9,4,"A"],["TMA302","Giao dịch thương mại quốc tế",3,8.3,3,"B"],["TRI116","Chủ nghĩa xã hội khoa học",2,8.9,4,"A"]]},{"k":"HK3 · 2024 - 2025","gpa4":null,"gpa10":null,"tc":null,"xl":"Xuất sắc","m":[["GDTC3","Giáo dục thể chất 3",2,6.4,2,"C"],["KTE501","Thực tập giữa khóa",3,8.8,4,"A"]]},{"k":"HK1 · 2025 - 2026","gpa4":3.39,"gpa10":8.37,"tc":23,"xl":"Giỏi","m":[["DTU310","Đầu tư quốc tế",3,9.6,4,"A"],["DTU401","Phân tích và đầu tư chứng khoán",3,7.5,3,"B"],["ESP235","Tiếng Anh chuyên ngành 3 (Marketing)",3,7.8,3,"B"],["KDO402","Quản lý rủi ro trong kinh doanh quốc tế",3,9.3,4,"A"],["KTE507","Thực hành dự án kinh doanh",3,8.5,4,"A"],["MKT401","Marketing quốc tế",3,8,3,"B"],["TMA305","Logistics và vận tải quốc tế",3,8,3,"B"],["TRI117","Lịch sử Đảng Cộng sản Việt Nam",2,8.2,3,"B"]]},{"k":"HK2 · 2025 - 2026","gpa4":4,"gpa10":8.88,"tc":18,"xl":"Xuất sắc","m":[["ESP451","Tiếng Anh chuyên ngành 5 (Diễn thuyết trước công chúng)",3,8.5,4,"A"],["TMA306","Thương mại điện tử",3,8.9,4,"A"],["TMA320","Thuế và hệ thống thuế ở Việt Nam",3,8.5,4,"A"],["TMA402","Bảo hiểm trong kinh doanh",3,8.7,4,"A"],["TMA412","Thương mại dịch vụ",3,8.8,4,"A"],["TOA206","Mô hình chuỗi thời gian trong kinh tế và kinh doanh",3,9.9,4,"A"]]},{"k":"HK3 · 2025 - 2026","gpa4":null,"gpa10":null,"tc":null,"xl":"Xuất sắc","m":[["TIN314","Lập trình cho phân tích dữ liệu và tính toán khoa học",3,null,null,null]]},{"k":"HK1 · 2026 - 2027","gpa4":null,"gpa10":null,"tc":null,"xl":"Xuất sắc","m":[["ESP341","Tiếng Anh chuyên ngành 4 (Thư tín thương mại)",3,null,null,null]]}];
+
+/* biểu đồ GPA từng kỳ */
+const chart=document.getElementById('chart');
+const withGpa=DIEM.filter(s=>s.gpa4!==null);
+const maxG=4;
+withGpa.forEach(s=>{
+  const col=document.createElement('div');col.className='bar-col';
+  const h=Math.max(8,((s.gpa4-2.9)/(maxG-2.9))*100);
+  col.innerHTML='<div class="bar'+(s.gpa4>=3.9?' top':'')+'" data-h="'+h+'" style="height:0"><em>'+s.gpa4.toFixed(2)+'</em></div><span>'+s.k.split(' · ')[0]+'<br>'+s.k.split(' · ')[1].replace(/ /g,'').replace('-','–')+'</span>';
+  chart.appendChild(col);
+});
+
+/* danh sách học kỳ */
+const semList=document.getElementById('semList');
+let totalA=0;
+DIEM.forEach((s,i)=>{
+  s.m.forEach(m=>{if(m[5]==='A')totalA++});
+  const done=s.gpa4!==null;
+  const graded=s.m.some(m=>m[3]!==null);
+  const div=document.createElement('div');div.className='sem';
+  let pills='';
+  if(done)pills+='<span class="pill gpa">GPA '+s.gpa4.toFixed(2)+'</span><span class="pill">'+s.gpa10+'/10</span><span class="pill">'+s.tc+' TC</span><span class="pill">'+s.xl+'</span>';
+  else if(graded)pills+='<span class="pill">Kỳ phụ</span>';
+  else pills+='<span class="pill soon">Đang học</span>';
+  let rows='';
+  s.m.forEach(m=>{
+    rows+='<tr><td class="code">'+m[0]+'</td><td>'+m[1]+'</td><td class="num">'+(m[2]||'—')+'</td>'+
+          '<td class="num">'+(m[3]!==null?m[3]:'—')+'</td>'+
+          '<td class="num">'+(m[4]!==null?m[4]:'—')+'</td>'+
+          '<td class="num">'+(m[5]?'<span class="gr '+m[5]+'">'+m[5]+'</span>':'—')+'</td></tr>';
+  });
+  div.innerHTML='<button class="sem-btn"><span class="arw">▶</span><span class="t">'+s.k+'</span>'+pills+'</button>'+
+    '<div class="sem-body"><table class="tbl"><thead><tr><th>Mã MH</th><th>Tên môn học</th><th class="num">TC</th><th class="num">Hệ 10</th><th class="num">Hệ 4</th><th class="num">Chữ</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
+  div.querySelector('.sem-btn').addEventListener('click',()=>div.classList.toggle('open'));
+  semList.appendChild(div);
+});
+document.getElementById('countA').textContent=totalA;
+
+/* ============================================================
+   4. LIGHTBOX
+   ============================================================ */
+const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('#gallery img, .run-photos img').forEach(img=>{
+  img.addEventListener('click',()=>{lbImg.src=img.src;lbImg.alt=img.alt;lb.classList.add('on')});
+});
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+/* ============================================================
+   5. MINI GAME — Thẻ Cơ hội / Khí vận
+   ============================================================ */
+const FATES=[
+ {i:'📐',k:'Khí vận',t:'Bảy năm học chuyên Toán. Thế mạnh lớn nhất: Hình học phẳng — môn học dạy bạn nhìn ra đường phụ mà cả lớp chưa thấy.'},
+ {i:'📈',k:'Cơ hội',t:'Nhận phòng Marketing với doanh thu khách lẻ bằng 0. Ba tháng sau: hơn 400 triệu. Tiến 2 ô.'},
+ {i:'🏃',k:'Khí vận',t:'43,79 km trong 6 giờ 5 phút. Không có huy chương, chỉ có đôi giày hỏng và một buổi sáng ngủ bù.'},
+ {i:'🥉',k:'Cơ hội',t:'Giải Ba học sinh giỏi Quốc gia môn Toán năm lớp 12. Trước đó một năm: Giải Khuyến khích.'},
+ {i:'👥',k:'Khí vận',t:'Đã từng chịu trách nhiệm cho 7 nhân sự khi vẫn đang là sinh viên năm hai.'},
+ {i:'🎯',k:'Cơ hội',t:'Tỷ lệ chốt hợp đồng 60% tại dự án SJOB. Phần lớn công sức nằm ở khâu đào tạo, không phải khâu chốt.'},
+ {i:'📚',k:'Khí vận',t:'GPA 3.69/4.0 sau 122 tín chỉ, trong đó có một học kỳ tuyệt đối 4.00.'},
+ {i:'☕',k:'Cơ hội',t:'Học kỳ tệ nhất là 3.39 — đúng kỳ ôm nhiều việc nhất. Bài học: đừng đánh cược quá tay khi vòng bàn cờ còn dài.'},
+ {i:'🗣️',k:'Khí vận',t:'Từ trợ giảng Toán chuyên tới đứng trước phòng Marketing: cùng một kỹ năng — giải thích thứ khó cho người chưa biết.'}
+];
+const fateCard=document.getElementById('fateCard');
+function drawFate(){
+  const f=FATES[Math.floor(Math.random()*FATES.length)];
+  fateCard.style.transform='rotateY(90deg)';fateCard.style.transition='transform .18s';
+  setTimeout(()=>{
+    fateCard.innerHTML='<div class="kind">'+f.k+'</div><div class="ico">'+f.i+'</div><p>'+f.t+'</p>';
+    fateCard.style.transform='rotateY(0)';
+  },190);
+}
+document.getElementById('fateBtn').addEventListener('click',drawFate);
+
+/* ============================================================
+   6. MINI GAME — Sàn giao dịch 20 lượt
+   ============================================================ */
+const mkt={price:100,cash:100,units:0,turn:0,hist:[100],timer:null,peak:100};
+const $p=document.getElementById('mktPrice'),$pos=document.getElementById('mktPos'),$val=document.getElementById('mktVal'),
+      $turn=document.getElementById('mktTurn'),$best=document.getElementById('mktBest'),$spark=document.getElementById('spark'),
+      bBuy=document.getElementById('btnBuy'),bSell=document.getElementById('btnSell'),bStart=document.getElementById('mktStart');
+
+function mktValue(){return mkt.units>0?mkt.units*mkt.price:mkt.cash}
+function drawSpark(){
+  const h=mkt.hist,min=Math.min(...h),max=Math.max(...h),rng=(max-min)||1;
+  const pts=h.map((v,i)=>((i/(Math.max(h.length-1,1)))*300).toFixed(1)+','+(68-((v-min)/rng)*62).toFixed(1)).join(' ');
+  $spark.innerHTML='<polyline points="'+pts+'" fill="none" stroke="'+(mkt.hist[mkt.hist.length-1]>=mkt.hist[0]?'#8fe0b4':'#ff8b7d')+'" stroke-width="2" stroke-linejoin="round"/>';
+}
+function mktRender(){
+  const prev=mkt.hist[mkt.hist.length-2]??mkt.price;
+  $p.textContent=mkt.price.toFixed(1);
+  $p.className='mkt-price '+(mkt.price>prev?'up':mkt.price<prev?'down':'');
+  $pos.textContent=mkt.units>0?'Đang giữ: cổ phiếu':'Đang giữ: tiền mặt';
+  $val.textContent=mktValue().toFixed(1).replace('.',',')+' tr';
+  $turn.textContent='Lượt '+mkt.turn+' / 20';
+  drawSpark();
+}
+function mktTick(){
+  mkt.turn++;
+  const drift=(Math.random()-0.48)*7;
+  mkt.price=Math.max(20,mkt.price*(1+drift/100)+ (Math.random()-0.5)*1.6);
+  mkt.hist.push(mkt.price);
+  if(mkt.units>0)mkt.cash=0;
+  mktRender();
+  if(mkt.turn>=20){
+    clearInterval(mkt.timer);
+    if(mkt.units>0){mkt.cash=mkt.units*mkt.price;mkt.units=0}
+    bBuy.disabled=true;bSell.disabled=true;bStart.textContent='Chơi lại';bStart.disabled=false;
+    const pnl=mkt.cash-100;
+    $best.textContent=(pnl>=0?'Lãi +':'Lỗ ')+pnl.toFixed(1).replace('.',',')+' tr';
+    $best.style.color=pnl>=0?'#8fe0b4':'#ff8b7d';
+    $pos.textContent=pnl>=0?(pnl>25?'Xuất sắc — mời vào phòng Marketing.':'Có lãi. Chấp nhận được.'):'Lỗ. Cờ tỷ phú mà, ván sau gỡ.';
+  }
+}
+bStart.addEventListener('click',()=>{
+  clearInterval(mkt.timer);
+  Object.assign(mkt,{price:100,cash:100,units:0,turn:0,hist:[100]});
+  $best.textContent='';bBuy.disabled=false;bSell.disabled=true;bStart.disabled=true;bStart.textContent='Đang chạy…';
+  mktRender();
+  mkt.timer=setInterval(mktTick,850);
+});
+bBuy.addEventListener('click',()=>{mkt.units=mkt.cash/mkt.price;mkt.cash=0;bBuy.disabled=true;bSell.disabled=false;mktRender()});
+bSell.addEventListener('click',()=>{mkt.cash=mkt.units*mkt.price;mkt.units=0;bBuy.disabled=false;bSell.disabled=true;mktRender()});
+drawSpark();
+
+/* ============================================================
+   7. MINI GAME — Đố vui hồ sơ
+   ============================================================ */
+const QUIZ=[
+ {q:'GPA tích lũy hệ 4 của Tuấn Anh là bao nhiêu?',o:['3.39','3.69','3.74','4.00'],a:1},
+ {q:'Cự ly dài nhất Tuấn Anh từng chạy trong một lần?',o:['21,1 km','30,5 km','43,79 km','50 km'],a:2},
+ {q:'Tại Laptop Hải Đăng, doanh thu tháng 3/2025 gấp bao nhiêu lần tháng 1/2025?',o:['3 lần','7 lần','14 lần','20 lần'],a:2},
+ {q:'Giải thưởng Toán cấp Quốc gia cao nhất Tuấn Anh đạt được?',o:['Giải Nhất','Giải Nhì','Giải Ba','Khuyến khích'],a:2},
+ {q:'Tỷ lệ chốt hợp đồng tại dự án SJOB?',o:['30%','45%','60%','80%'],a:2}
+];
+let qi=0,qs=0,qzOn=false;
+const $qi=document.getElementById('qzIdx'),$qs=document.getElementById('qzScore'),
+      $qq=document.getElementById('qzQ'),$qo=document.getElementById('qzOpts'),$qb=document.getElementById('qzBtn');
+function renderQ(){
+  const q=QUIZ[qi];
+  $qi.textContent='Câu '+(qi+1)+' / '+QUIZ.length;
+  $qs.textContent='Điểm: '+qs;
+  $qq.textContent=q.q;
+  $qo.innerHTML='';
+  q.o.forEach((opt,i)=>{
+    const b=document.createElement('button');b.textContent=opt;
+    b.addEventListener('click',()=>{
+      if(b.disabled)return;
+      [...$qo.children].forEach(x=>x.disabled=true);
+      if(i===q.a){b.classList.add('ok');qs++}
+      else{b.classList.add('no');$qo.children[q.a].classList.add('ok')}
+      $qs.textContent='Điểm: '+qs;
+      setTimeout(()=>{
+        qi++;
+        if(qi<QUIZ.length)renderQ();
+        else{
+          $qq.textContent=qs===5?'Trọn 5/5. Bạn đọc kỹ hơn cả người viết ra trang này.':qs>=3?'Được '+qs+'/5. Kéo lên trên đọc lại là ăn trọn.':'Được '+qs+'/5. Thôi, cuộn lên đọc lại từ đầu nhé.';
+          $qo.innerHTML='';$qb.style.display='';$qb.textContent='Chơi lại';qzOn=false;
+        }
+      },820);
+    });
+    $qo.appendChild(b);
+  });
+}
+$qb.addEventListener('click',()=>{qi=0;qs=0;qzOn=true;$qb.style.display='none';renderQ()});
+
+/* ============================================================
+   8. HIỆU ỨNG XUẤT HIỆN
+   ============================================================ */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      if(e.target.id==='chart'){
+        e.target.querySelectorAll('.bar').forEach((b,i)=>setTimeout(()=>b.style.height=b.dataset.h+'%',i*90));
+      }
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
